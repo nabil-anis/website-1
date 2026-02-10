@@ -2,7 +2,11 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 const getAIClient = () => {
-  return new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+  const apiKey = process.env.API_KEY;
+  if (!apiKey) {
+    console.warn("API Key missing. Intelligence features will be limited.");
+  }
+  return new GoogleGenAI({ apiKey: apiKey || '' });
 };
 
 export const generateInnovationResponse = async (prompt: string): Promise<string> => {
@@ -36,7 +40,9 @@ export async function* generateInnovationStream(prompt: string) {
     });
 
     for await (const chunk of responseStream) {
-      yield chunk.text || "";
+      if (chunk.text) {
+        yield chunk.text;
+      }
     }
   } catch (error) {
     console.error("Gemini Stream Error:", error);
