@@ -1,0 +1,8 @@
+{
+  "name": "Ine - Personal Intelligence Portal",
+  "description": "A futuristic personal intelligence and innovation dashboard featuring real-time AI brainstorming and sleek Glassmorphism design.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
