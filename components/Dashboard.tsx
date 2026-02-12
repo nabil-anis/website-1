@@ -225,7 +225,7 @@ const CaseStudy: React.FC = () => {
                     </div>
                      <div className="flex gap-2 border-l-2 border-orange-500/30 pl-3">
                       <span className="text-orange-500 font-bold">[ACTION]</span>
-                      <span>API POST /v1/calendar/book -> 200 OK</span>
+                      <span>API POST /v1/calendar/book -&gt; 200 OK</span>
                     </div>
                   </div>
                 </div>
