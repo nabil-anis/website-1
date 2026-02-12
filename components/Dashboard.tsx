@@ -142,7 +142,7 @@ const CaseStudy: React.FC = () => {
                 </div>
                 <h3 className="text-2xl md:text-4xl font-bold text-white">Automated Voice Outreach</h3>
                 <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
-                  Project Nosh deployed an AI-powered voice system that acts as a 24/7 sales team. It automatically calls lists of leads, understands what they say, and books appointments for those who are interested.
+                  Deployed an AI-powered voice system that acts as a 24/7 sales team. It automatically calls lists of leads, understands what they say, and books appointments for those who are interested.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pt-4 md:pt-8 text-left sm:text-center">
                   <div className="p-5 md:p-6 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
