@@ -269,7 +269,7 @@ const CaseStudy: React.FC = () => {
                         </linearGradient>
                       </defs>
                       <CartesianGrid strokeDasharray="3 3" stroke="#222" vertical={false} />
-                      <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{fill: '#666', fontSize: 10}} />
+                      <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{fill: '#9ca3af', fontSize: 10}} />
                       <Tooltip contentStyle={{backgroundColor: '#050505', border: '1px solid #222', borderRadius: '8px', color: '#fff'}} />
                       <Area type="monotone" dataKey="leads" stroke="#8b5cf6" fill="url(#colorLeads)" strokeWidth={3} />
                     </AreaChart>
@@ -284,7 +284,7 @@ const CaseStudy: React.FC = () => {
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={efficiencyData}>
                           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#222" />
-                          <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#666', fontSize: 10}} />
+                          <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#9ca3af', fontSize: 10}} />
                           <Tooltip cursor={{fill: 'transparent'}} contentStyle={{backgroundColor: '#050505', border: '1px solid #222', borderRadius: '8px', color: '#fff'}} />
                           <Bar dataKey="value" radius={[4, 4, 0, 0]} barSize={40}>
                             {efficiencyData.map((entry, index) => (
