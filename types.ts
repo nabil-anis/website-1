@@ -14,8 +14,8 @@ export interface Idea {
 }
 
 export enum Page {
-  Dashboard = 'dashboard',
-  Intelligence = 'intelligence',
-  Forge = 'forge',
-  Settings = 'settings'
+  CaseStudies = 'case_studies',
+  Demo = 'demo',
+  Solutions = 'solutions',
+  About = 'about'
 }
